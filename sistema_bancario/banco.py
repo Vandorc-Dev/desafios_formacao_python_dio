@@ -19,7 +19,7 @@ while True:
     if opcao == "d":
         valor = float(input("Informa o valor a ser depositado: "))
 
-        if valor == 0:
+        if valor > 0:
             saldo += valor
             extrato += f"Depósito: R$ {valor:.f2}\n"
 
